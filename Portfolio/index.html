@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsiry - Portefolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+		  <ul class="bar_gauche">
+				<li onclick=fermer_bar_gauche() ><img class=" btn_fermer" src="assets/images/close_111152.png" alt=""></li>
+				<li><a href="#A_propos">À propos</a></li>
+				<li><a href="#Compétences">Compétences</a></li>
+				<li><a href="#Projets">Projets</a></li>
+				<li><a href="#Contact">Contact</a></li>
+        </ul>
+        <ul>
+            <li ><a href="#"><p><b>Tsiry</b></p></a></li>
+            <li class="cacher_sur_mobile"><a href="#A_propos">À propos</a></li>
+            <li class="cacher_sur_mobile"><a href="#Compétences">Compétences</a></li>
+            <li class="cacher_sur_mobile"><a href="#Projets">Projets</a></li>
+			<li class="cacher_sur_mobile"><a href="#Contact">Contact</a></li>
+			<li class="bouton_menu" onclick=Afficher_bar_droite() ><a href="#"><img src="assets/images/burger_line_list_menu_nav_navigation_option_icon_123231.png" alt=""></a></li>
+        </ul>
+
+<script>
+	function Afficher_bar_droite(){
+		const bar_gauche = document.querySelector('.bar_gauche')
+		bar_gauche.style.display = 'flex'
+	}	
+
+	function fermer_bar_gauche(){
+		const bar_gauche = document.querySelector('.bar_gauche')
+		bar_gauche.style.display = 'none'
+	}
+</script>
+    </nav>
+	 <main>
+		<section class="profil">
+			<div class="grid_profil">
+				<div class="sc_droite">
+					<div class="mon_image"></div>
+				</div>
+				<div class="sc_droite">
+					<div class="sc_droite_in">
+						<h1>Bonjour ! je suis Tsiry,</h1>
+						<div class="animation_texte">
+							<h1>un <span></span></h1>
+						</div>
+						<p >Passionné par le développement web et application mobile</p>	
+						<div class="image_acc">
+							<img src="assets/github.png" alt="">
+							<img src="assets/" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<p>voir </p> 
+			<h1>A propos de moi</h1>
+		<section  id="A_propos" class="A_propos">
+			<p class="paragraphe">Étudiant en première année d'informatique, je me passionne pour le développement web et mobile, avec une curiosité particulière pour les langages modernes comme JavaScript, Python et les frameworks tels que React et Flutter. Autodidacte et rigoureux, j'aime concrétiser mes apprentissages à travers des projets personnels, alliant logique algorithmique et créativité. Mon objectif ? Acquérir une expertise solide tout en contribuant à des solutions innovantes, et pourquoi pas un jour, créer mes propres applications utiles au quotidien.</p>
+			<div class="boite_grid">
+				<div class="boite formations">
+					<h3>Formations</h3><br>
+					<p><b>Licence 1 Informatique</b></p>
+					<p>Institut de Formation Technique, Année en cours<br>
+					<b>Cours suivis:</b> <br> Algorithmique, Programmation (C/Pascal),<br> Bases de données, Mathématiques discrètes.</p>
+					<p><b>Baccalauréat (Serie A2)</b></p>
+					<p>Mention: Assez bien</p>
+				</div>
+				<div class="boite formations">
+					<h3>Compétences</h3><br>
+					<p><b>Langages:</b><br>C, Pascal, HTML/CSS</p>
+					<p><b>Outils:</b> <br> Git, Visual Studio Code</p>
+					<p><b>Systèmes: </b> <br> Linux (bash), Windows</p>
+					<p><b>Soft Skills:</b><br> Travail d’équipe, Résolution de problèmes</p>
+				</div>
+			</div>
+
+		</section>
+		<p>explorer mes </p>
+		<h1>Compétences</h1>
+		<section id="Compétences" class="Compétences">
+				<div class="comp_principal">
+					<div class="compe">
+						<H3>Développement web</H3><br>
+						<div class="comp">
+							<img src="assets/images/html-5.png" alt="">
+							<div>
+								<p><b>HTML </b>(Intermédiaire)</p>
+								⭐⭐⭐⭐☆	
+							</div>
+						</div>
+					<div class="comp">
+						<img src="assets/images/css-3.png" alt="">
+						<div>
+						<p><b>CSS </b>(Intermédiaire)</p>
+						⭐⭐⭐⭐☆
+						</div>
+					</div>
+						<div class="comp">
+							<img src="assets/images/js.png" alt="">
+							<div>
+								<p><b>JavaScript </b>(Initiation)</p>
+								⭐☆☆☆☆
+							</div>
+						</div>
+						
+						
+					</div>
+					<div class="compe">
+						<H3>Programmation</H3><br>
+						<div class="comp">
+							<img src="assets/images/icons8-programmation-en-c-480.png" alt="">
+							<div>
+								<p><b>C </b>(Intermédiaire)</p>
+								⭐⭐⭐☆☆
+							</div>
+						</div>
+						<div class="comp">
+							<img src="assets/images/textxpascal_103617.png" alt="">
+							<div>
+								<p><b>Pascal </b>(Maitrises des bases)</p>
+							⭐⭐⭐☆☆
+							</div>	
+						</div>
+							<div class="comp">
+								<img src="assets/images/visual-basic.png" alt="">
+								<div>
+									<p><b>Visual Basic .NET </b>(Intermédiaire)</p>
+									⭐⭐⭐☆☆
+								</div>
+							</div>
+					</div>
+					
+					<div class="compe">
+							<H3>Bases de données & Outils</H3><br>
+							<div class="comp">
+							<img src="assets/images/microsoft-access.png" alt="">
+							<div>
+								<p><b>Access </b>(Bases acquises)</p>
+								⭐⭐☆☆☆
+							</div>
+						</div>
+						<div class="comp">
+							<img src="assets/images/git.png" alt="">
+							<div>
+								<p><b>Git </b>(Initiation)</p>
+								⭐☆☆☆☆
+							</div>
+						</div>	
+					</div>
+					<div class="compe">
+						<p><b>Objectif</b></p><br>
+						<p>Approfondir JavaScript et explorer les frameworks front-end.</p>  
+					</div>
+				</div>
+			</section>
+		<p>voir mes</p>
+			<h1>Projets</h1>
+		<section id="Projets" class="mes_projets"><br>
+			
+			<p class="paragraphe">Mes projets sont en cours de developpement, c'est à dire qu'il y a peut être des erreurs qui s'affiche. Malgré la version beta, ils sont prêts à être utiliser</p>
+			<div class="grid_projets">
+				<div class="projets">
+					<div class="img_projets">
+						x					</div>
+					<p><b>Bulletin de notes</b></p>
+					<p>Interface programmée sur vb.net </p>
+				</div>
+				<div class="projets">
+					<div class="img_projets_2">
+						x
+					</div>
+					<p><b>Gestion des étudiants</b></p>
+					<p>Un console programmé en C </p>
+				</div>
+				<div class="projets">
+					<div class="img_projets_3">
+						x
+					</div>
+					<p><b>Calculatrice</b></p>
+					<p >Un simple calculatrice programmé sur pascal</p>
+				</div>
+				<div class="projets">
+					<div class="img_projets_3">
+						x
+					</div>
+					<p><b>Calculatrice</b></p>
+					<p >Un simple calculatrice programmé sur pascal</p>
+				</div>
+			</div>
+		</section >	
+	 </main>
+	 <footer id="Contact">
+		<H1>Contact</H1><br>
+			<div class="grid-cont">
+				<div class="cont">
+					<p>envoyez-moi un email directement:</p><br>
+					<a class="mail" href="mailto:tsiryfi2005@gmail.com">tsiryfi2005@gmail.com</a>
+				</div>
+				
+			</div>
+	 </footer>
+</body>
+</html>
