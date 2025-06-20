@@ -4,7 +4,6 @@
 
 ## Technologies utilisées
 - HTML/CSS/JS
-- React (optionnel)
 - GitHub Pages pour l'hébergement
 
 ## Accès
