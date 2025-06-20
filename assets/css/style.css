@@ -65,6 +65,7 @@ nav img{
 .btn_fermer{
     padding: 10px;
     display: flex;
+    
 }
 .btn_fermer:hover{
     background-color: rgba(0, 0, 0, 0.341);
@@ -85,12 +86,14 @@ nav img{
     justify-content: flex-start;
     align-items: flex-start;
     z-index: 10;
+    
 }
 
 .bar_gauche li{
     width: 100%;
     color: black;
 }
+
 .bouton_menu{
     display: none;
 }
@@ -176,23 +179,6 @@ margin: auto;
     margin: auto;
 }
 
-.place_boutons{
-    margin-top: 20px;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 50px 50px;
-    gap: 2rem;
-}
-.github{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transition:all 0.3s;
-}
-.github:hover{
-    box-shadow: 0 0 10px rgb(167, 167, 167);
-    transform: translateY(-5px);
-}
 img{
     height: 50px;
 }
@@ -203,7 +189,8 @@ img{
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, 500px );
-    gap: 6rem;
+    gap: 2rem;
+    row-gap:1rem;
     margin-top: 15%;
 }
 .boite{
@@ -219,20 +206,15 @@ img{
 .comp_principal{
     margin: auto;
     display: grid;
-    grid-template-columns:repeat(auto-fit,500px);
+    grid-template-columns:repeat(auto-fit, minmax(100px,400px));
     justify-content: space-evenly;
     gap: 1.5rem;
 }
-.compe{
-    width: 400px;
-    height: 300px;
-    margin: auto;
-
-}
 .comp{
+    margin: auto;
     padding: 10px;
     display: flex;
-    gap: 1rem;
+    gap: 1rem;    
 }
 /*section projets*/
 .mes_projets{
@@ -261,47 +243,8 @@ img{
     transform: translateY(-5px);
     box-shadow: 0px 0px 10px slategray;
 }
-.img_projets{
-    margin: auto;
-    margin-top: 3px;
-   border-radius: 15px;
-    border: 0.1rem solid;
-    border-color: rgba(156, 156, 156, 0.484);
-    width:240px;
-    height: 200px;
-    background-image: url(assets/);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.img_projets_2{
-    margin: auto;
-    margin-top: 3px;
-    border-radius: 15px;
-    border: 0.1rem solid;
-    border-color: rgba(156, 156, 156, 0.481);
-    width:240px;
-    height: 200px;
-    background-image: url(assets/);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.img_projets_3{
-    margin: auto;
-    margin-top: 3px;
-   border-radius: 15px;
-    border: 0.1rem solid;
-    border-color: rgba(156, 156, 156, 0.414);
-    width:240px;
-    height: 200px;
-    background-image: url(assets/);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-.img_1{
-    width: 290px;
-    height: 200px;
-}
+
 
 /*section - contact*/
 .grid-cont{
@@ -339,6 +282,10 @@ img{
     }
     .bouton_menu{
     display: block;
+    transition: all 0.3s ease-in-out;
+    }
+    .bouton_menu:hover{
+    display: block;
     }
     .mon_image{
         width: 350px;
@@ -358,16 +305,24 @@ img{
         border-radius: 10px;
         border: none;
     }
+    img{
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media(max-width:428px){
     .boite{
         margin: auto;
-        width: 280px;
+        width: 240px;
+    }
+    .projets{
+        width: 200px;
+        margin: auto;
     }
     
-    .compe{
-        width: 300px;
+    section{
+        padding: 2px;
     }
      .mon_image{
         width: 250px;
@@ -375,5 +330,6 @@ img{
          background-repeat:repeat-x;
         background-size:200px;
     }
+    
   
 }
