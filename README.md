@@ -7,4 +7,4 @@
 - GitHub Pages pour l'hébergement
 
 ## Accès
-🔗 [Lien vers le site](https://tsiry-dev.github.io)
+🔗 [Lien vers le site](https://tsiryrf.github.io/tsiry-dev.github.io/)
